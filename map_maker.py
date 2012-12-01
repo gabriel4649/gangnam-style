@@ -1,4 +1,6 @@
-import simplekml
+#!/usr/bin/python
+
+import simplekml, pickle
 from googlemaps import GoogleMaps
 
 # Replace for your own key
@@ -7,15 +9,20 @@ gmaps = GoogleMaps('AIzaSyAmEvPWMafJFafvXGR-ampYOLQVSWmP5xM')
 
 kml = simplekml.Kml()
 
-address = 'Bangkok, Thailand'
-coords = [gmaps.address_to_latlng(address)]
-pnt = kml.newpoint(name=address, description="",
-                   coords=coords)
+# read python dict back from the file
+pkl_file = open('tweet_user_data.pkl', 'rb')
+users = pickle.load(pkl_file)
+pkl_file.close()
 
-
-
-
-
+for user, attributes in users.items():
+    try:
+        pnt = kml.newpoint()
+        pnt.name = attributes['name']
+        pnt.description = attributes['description']
+        address = attributes['location']
+        pnt.coords = [gmaps.address_to_latlng(address)]
+    except:
+        pass
 
 # Save the KML
-kml.save("T00 Point.kml")
+kml.save("gangnam.kml")
