@@ -28,3 +28,9 @@ nosetests.xml
 
 # Translations
 *.mo
+
+# virutalenv
+gangnam
+
+# Temp files
+*~
