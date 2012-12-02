@@ -13,12 +13,13 @@ def load_dict():
     pkl_file = open('tweet_user_data.pkl', 'rb')
     users = pickle.load(pkl_file)
     pkl_file.close()
+    return users
 
 
 sys.stdout = codecs.getwriter('utf-8')(sys.stdout)
 
 try:
-    load_dict()
+    users = load_dict()
 except:
     users = {}
 
@@ -34,7 +35,7 @@ for idx, username in enumerate(usernames):
     except:
         save_dict()
         sys.exit("Quota is finished at user# " + str(idx))
-        
+
     attributes = {}
     attributes['name'] = user.name
     attributes['id'] = user.id
