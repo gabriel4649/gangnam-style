@@ -20,7 +20,8 @@ for user, attributes in users.items():
         pnt.name = attributes['name']
         pnt.description = attributes['description']
         address = attributes['location']
-        pnt.coords = [gmaps.address_to_latlng(address)]
+        lat, lng = gmaps.address_to_latlng(address)
+        pnt.coords = [(lng, lat)]
     except:
         pass
 

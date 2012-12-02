@@ -2,16 +2,25 @@
 
 import twitter, codecs, sys, pickle
 
-sys.stdout = codecs.getwriter('utf-8')(sys.stdout)
+def save_dict():
+    # write python dict to a file
+    output = open('tweet_user_data.pkl', 'wb')
+    pickle.dump(users, output)
+    output.close()
 
-try:
+def load_dict():
     # read python dict back from the file
     pkl_file = open('tweet_user_data.pkl', 'rb')
     users = pickle.load(pkl_file)
     pkl_file.close()
 
+
+sys.stdout = codecs.getwriter('utf-8')(sys.stdout)
+
+try:
+    load_dict()
 except:
-    users = {}    
+    users = {}
 
 usernames = sys.stdin.readlines()
 api = twitter.Api()
@@ -23,9 +32,9 @@ for idx, username in enumerate(usernames):
     try:
         user = api.GetUser(username[:-1])
     except:
-        print "Quouta is finished at user# " + str(idx)
-        break
-
+        save_dict()
+        sys.exit("Quota is finished at user# " + str(idx))
+        
     attributes = {}
     attributes['name'] = user.name
     attributes['id'] = user.id
@@ -49,7 +58,4 @@ for idx, username in enumerate(usernames):
     attributes['favourites_count'] = user.favourites_count
     users[username] = attributes
 
-# write python dict to a file
-output = open('tweet_user_data.pkl', 'wb')
-pickle.dump(users, output)
-output.close()
+print "All the user data was gathered"
