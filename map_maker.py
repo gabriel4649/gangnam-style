@@ -30,6 +30,7 @@ with open('demo.csv', 'rb') as csvfile:
         pnt.style.iconstyle.icon.href = "http://localhost:8000/gangnam-style.svg"
         pnt.style.iconstyle.scale = 3
         pnt.style.balloonstyle.text = row[1]
+        pnt.style.balloonstyle.displaymode = 'default'
         pnt.style.labelstyle.scale = 2  # Make the text twice as big
         pnt.name = row[0]
         pnt.description = row[1]
