@@ -7,13 +7,17 @@
                 <scale>3</scale>
                 <heading>0</heading>
                 <Icon id="link_0">
-                    <href>gangnam-style.svg</href>
+                    <href>http://localhost:8000/gangnam-style.svg</href>
                 </Icon>
             </IconStyle>
             <LabelStyle id="substyle_1">
                 <colorMode>normal</colorMode>
                 <scale>2</scale>
             </LabelStyle>
+            <BalloonStyle>
+                <text>I love gangnam style</text>
+                <displayMode>default</displayMode>
+            </BalloonStyle>
         </Style>
         <Placemark id="feat_2">
             <name>joe123</name>

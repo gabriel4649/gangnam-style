@@ -14,7 +14,7 @@ kw = otter.loadrc() # load beta
 
 for i in range(0,100):
     rs = otter.Resource('search')
-    rs(q='@psy_oppa PSY Oppa', window='d'+str(i), type='tweet')
+    rs(q='gangnam style', window='d'+str(i), type='tweet')
 
     for page in rs:
         for item in page.response.list:

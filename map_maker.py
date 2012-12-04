@@ -3,7 +3,6 @@
 import simplekml, csv
 from googlemaps import GoogleMaps
 
-
 def utf_8_encoder(unicode_csv_data):
     for line in unicode_csv_data:
         yield line.encode('utf-8')
@@ -33,6 +32,7 @@ with open('demo.csv', 'rb') as csvfile:
     for row in twitter_reader:
         pnt = kml.newpoint()
         pnt.style = style
+        pnt.style.balloonstyle.text = row[1]
         pnt.name = row[0]
         pnt.description = row[1]
         style.labelstyle.scale = 2  # Make the text twice as big
