@@ -19,6 +19,78 @@
                 <displayMode>default</displayMode>
             </BalloonStyle>
         </Style>
+        <Style id="stylesel_1">
+            <IconStyle id="substyle_2">
+                <colorMode>normal</colorMode>
+                <scale>3</scale>
+                <heading>0</heading>
+                <Icon id="link_1">
+                    <href>http://localhost:8000/gangnam-style.svg</href>
+                </Icon>
+            </IconStyle>
+            <LabelStyle id="substyle_3">
+                <colorMode>normal</colorMode>
+                <scale>2</scale>
+            </LabelStyle>
+            <BalloonStyle>
+                <text>I love gangnam style</text>
+                <displayMode>default</displayMode>
+            </BalloonStyle>
+        </Style>
+        <Style id="stylesel_2">
+            <IconStyle id="substyle_4">
+                <colorMode>normal</colorMode>
+                <scale>3</scale>
+                <heading>0</heading>
+                <Icon id="link_2">
+                    <href>http://localhost:8000/gangnam-style.svg</href>
+                </Icon>
+            </IconStyle>
+            <LabelStyle id="substyle_5">
+                <colorMode>normal</colorMode>
+                <scale>2</scale>
+            </LabelStyle>
+            <BalloonStyle>
+                <text>I love gangnam style</text>
+                <displayMode>default</displayMode>
+            </BalloonStyle>
+        </Style>
+        <Style id="stylesel_3">
+            <IconStyle id="substyle_6">
+                <colorMode>normal</colorMode>
+                <scale>3</scale>
+                <heading>0</heading>
+                <Icon id="link_3">
+                    <href>http://localhost:8000/gangnam-style.svg</href>
+                </Icon>
+            </IconStyle>
+            <LabelStyle id="substyle_7">
+                <colorMode>normal</colorMode>
+                <scale>2</scale>
+            </LabelStyle>
+            <BalloonStyle>
+                <text>I love gangnam style</text>
+                <displayMode>default</displayMode>
+            </BalloonStyle>
+        </Style>
+        <Style id="stylesel_4">
+            <IconStyle id="substyle_8">
+                <colorMode>normal</colorMode>
+                <scale>3</scale>
+                <heading>0</heading>
+                <Icon id="link_4">
+                    <href>http://localhost:8000/gangnam-style.svg</href>
+                </Icon>
+            </IconStyle>
+            <LabelStyle id="substyle_9">
+                <colorMode>normal</colorMode>
+                <scale>2</scale>
+            </LabelStyle>
+            <BalloonStyle>
+                <text>I love gangnam style</text>
+                <displayMode>default</displayMode>
+            </BalloonStyle>
+        </Style>
         <Placemark id="feat_2">
             <name>joe123</name>
             <description>I love gangnam style</description>
@@ -36,7 +108,7 @@
             <TimeStamp id="time_1">
                 <when>2012</when>
             </TimeStamp>
-            <styleUrl>#stylesel_0</styleUrl>
+            <styleUrl>#stylesel_1</styleUrl>
             <Point id="geom_1">
                 <coordinates>-0.1276831,51.5073346,0.0</coordinates>
             </Point>
@@ -47,7 +119,7 @@
             <TimeStamp id="time_2">
                 <when>2012</when>
             </TimeStamp>
-            <styleUrl>#stylesel_0</styleUrl>
+            <styleUrl>#stylesel_2</styleUrl>
             <Point id="geom_2">
                 <coordinates>-77.0363658,38.8951118,0.0</coordinates>
             </Point>
@@ -58,7 +130,7 @@
             <TimeStamp id="time_3">
                 <when>2012</when>
             </TimeStamp>
-            <styleUrl>#stylesel_0</styleUrl>
+            <styleUrl>#stylesel_3</styleUrl>
             <Point id="geom_3">
                 <coordinates>-66.1057217,18.4663338,0.0</coordinates>
             </Point>
@@ -69,7 +141,7 @@
             <TimeStamp id="time_4">
                 <when>2012</when>
             </TimeStamp>
-            <styleUrl>#stylesel_0</styleUrl>
+            <styleUrl>#stylesel_4</styleUrl>
             <Point id="geom_4">
                 <coordinates>-80.2264393,25.7889689,0.0</coordinates>
             </Point>

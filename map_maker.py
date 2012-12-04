@@ -23,19 +23,16 @@ kml = simplekml.Kml()
 # CSV format
 # username, tweet, location, profile pic, timestamp, number of tweets, number of followers, numbers of following
 
-style = simplekml.Style()
-style.iconstyle.icon.href = "http://localhost:8000/gangnam-style.svg"
-style.iconstyle.scale = 3
-
 with open('demo.csv', 'rb') as csvfile:
     twitter_reader = unicode_csv_reader(csvfile)
     for row in twitter_reader:
         pnt = kml.newpoint()
-        pnt.style = style
+        pnt.style.iconstyle.icon.href = "http://localhost:8000/gangnam-style.svg"
+        pnt.style.iconstyle.scale = 3
         pnt.style.balloonstyle.text = row[1]
+        pnt.style.labelstyle.scale = 2  # Make the text twice as big
         pnt.name = row[0]
         pnt.description = row[1]
-        style.labelstyle.scale = 2  # Make the text twice as big
         address = row[2]
         lat, lng = gmaps.address_to_latlng(address)
         pnt.coords = [(lng, lat)]
