@@ -95,7 +95,7 @@
             <name>I love gangnam style by @joe123</name>
             <description>I love gangnam style</description>
             <TimeStamp id="time_0">
-                <when>2012</when>
+                <when>2012-04-24</when>
             </TimeStamp>
             <styleUrl>#stylesel_0</styleUrl>
             <Point id="geom_0">
@@ -106,7 +106,7 @@
             <name>I love gangnam style by @josh</name>
             <description>I love gangnam style</description>
             <TimeStamp id="time_1">
-                <when>2012</when>
+                <when>2005-08-21</when>
             </TimeStamp>
             <styleUrl>#stylesel_1</styleUrl>
             <Point id="geom_1">
@@ -117,7 +117,7 @@
             <name>I love gangnam style by @joshua</name>
             <description>I love gangnam style</description>
             <TimeStamp id="time_2">
-                <when>2012</when>
+                <when>2011-05-29</when>
             </TimeStamp>
             <styleUrl>#stylesel_2</styleUrl>
             <Point id="geom_2">
@@ -128,7 +128,7 @@
             <name>I love gangnam style by @julia</name>
             <description>I love gangnam style</description>
             <TimeStamp id="time_3">
-                <when>2012</when>
+                <when>2012-11-19</when>
             </TimeStamp>
             <styleUrl>#stylesel_3</styleUrl>
             <Point id="geom_3">
@@ -139,7 +139,7 @@
             <name>I love gangnam style by @juke</name>
             <description>I love gangnam style</description>
             <TimeStamp id="time_4">
-                <when>2012</when>
+                <when>2012-2-11</when>
             </TimeStamp>
             <styleUrl>#stylesel_4</styleUrl>
             <Point id="geom_4">
